@@ -1,5 +1,6 @@
 <?php
 /**
+ * @link https://github.com/lordcoste/analytics-s2s
  * @author Colao Stefano < lordcoste@gmail.com >
  */
 
@@ -12,7 +13,7 @@ Autoloader::map(array(
     'Google_AnalyticsService' => Bundle::path(BUNDLE_NAME).'google-api'.DS.'contrib'.DS.'Google_AnalyticsService.php',
 ));
 
-Laravel\IoC::singleton('google-analytics', function()
+IoC::singleton('google-analytics', function()
 {
     $prefix = Bundle::prefix(BUNDLE_NAME);
 
